@@ -1,0 +1,13 @@
+{
+  "name": "@fczbkk/npm_custom_task",
+  "version": "1.0.0",
+  "description": "How to write custom tasks for NPM.",
+  "author": "Riki Fridrich <riki@fczbkk.com> (http://fczbkk.com/)",
+  "license": "MIT",
+  "scripts": {
+    "custom_task": "node ./tasks/custom_task.js",
+    "async_task": "node ./tasks/async_task.js",
+    "param_task": "node ./tasks/param_task.js",
+    "chain_task": "npm run custom_task && npm run async_task && npm run param_task aaa bbb"
+  }
+}
